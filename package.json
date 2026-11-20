@@ -1,0 +1,13 @@
+
+{
+  "name": "threads-studio",
+  "version": "1.0.0",
+  "description": "Threads Studio AI Copywriting Generator",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
