@@ -1,13 +1,1 @@
-
-{
-  "name": "threads-studio",
-  "version": "1.0.0",
-  "description": "Threads Studio AI Copywriting Generator",
-  "main": "server.js",
-  "scripts": {
-    "start": "node server.js"
-  },
-  "dependencies": {
-    "express": "^4.21.2"
-  }
-}
+{"name":"threads-studio-v6","version":"6.0.0","private":true,"scripts":{"start":"node server.js"},"dependencies":{"express":"^4.21.2"}}
