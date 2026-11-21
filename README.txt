@@ -1,29 +1,22 @@
-THREADS STUDIO MOBILE V3
+THREADS STUDIO MOBILE V5
 
 Files: index.html, server.js, manifest.json, sw.js
 
-Requires Node.js 18+ and an OpenAI API key.
+V5 features:
+- 3 distinct copywriting variations with angle labels
+- Post utama + Reply 1 benefit + Reply 2 CTA
+- SEO keyword phrases and hashtags per variation
+- Copy individual section or copy complete variation
+- Mobile/PWA, history saved locally in browser
+- Product metadata detector (may be blocked by marketplaces)
 
-Setup:
-1. Extract all files into a folder.
-2. npm init -y
-3. npm install express
-4. Set API key securely:
-   macOS/Linux: export OPENAI_API_KEY="YOUR_KEY"
-   Windows PowerShell: $env:OPENAI_API_KEY="YOUR_KEY"
-5. node server.js
-6. Open http://localhost:3000
+Deploy on Railway:
+1. Replace index.html and server.js in GitHub repository with these V5 versions. Keep manifest.json and sw.js (or replace them too).
+2. Railway redeploys from GitHub when integration is working. If not, manually redeploy latest deployment.
+3. Keep OPENAI_API_KEY in Railway Variables only; do not add it to GitHub or frontend.
+4. PORT is read from process.env.PORT, with fallback 8080.
 
-For mobile access/PWA:
-Deploy this folder on a Node-capable host with HTTPS (Render/Railway/etc).
-Set OPENAI_API_KEY as a server environment secret, not in HTML.
-Then open deployed HTTPS URL on your phone and use browser menu Add to Home Screen.
+No API key is included in this package.
 
-Features:
-- Mobile-first layout and bottom navigation
-- Attempts product metadata detection via server
-- AI-generated 3 copy variations (main/reply1/reply2)
-- Copy controls and local history (localStorage)
-- PWA manifest and service worker shell cache
 
-Link scraping is best-effort; marketplace sites may block requests, redirects or metadata. A production server should have stronger SSRF protections, rate limiting, and host-level egress controls before public use. API calls incur OpenAI charges.
+MODULE BARU V5: Organic & Engagement Studio. Pilih niche, audience dan fokus (idea 7 hari, conversation, engagement, poll, storytelling, edukasi, komuniti atau calendar), kemudian generate 7 item. Endpoint tambahan /api/organic.
